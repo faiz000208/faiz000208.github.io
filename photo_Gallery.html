@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Photo Gallery</title>
+
+        <style>
+            h1 {text-align: center;}
+            h2 {text-align: center;}
+            p {text-align: center;}
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                position: -webkit-sticky; /* Safari */
+                position: sticky;
+                top: 0;
+            }
+
+            li {
+                float: right;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #111;
+            }
+
+            .active {
+                background-color: #9F87F6;
+            }
+        </style>
+
+        <style>
+            body {
+                background-image: url('image/back2.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed; 
+              background-size: 100% 100%;
+            }
+        </style>
+
+        <style>
+            body {
+                font-family: "Sofia", sans-serif;
+                }
+        </style>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .row {
+                display: flex;
+            }
+
+            /* Create three equal columns that sits next to each other */
+            .column {
+                flex: 33.33%;
+                padding: 5px;
+            }
+        </style>
+
+        <style>
+            .footer {
+                position: relative;
+                padding: 10px 10px 0px 10px;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 4rem;
+                background-color: #9F87F6;
+                color: black;
+                text-align: end;
+                }
+        </style>
+    </head>
+
+    <body>
+
+        <ul>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a class="active" href="photo_Gallery.html">Photo Galery</a></li>
+            <li style="float:left"><a href="index.html">Home</a></li>
+        </ul>
+
+        <hr>
+        <h1 style="background-color:lightpink;">Himpunan Gambar Makanan</h1>
+        <hr>
+
+    <!-- susun gambar side to side -->
+    <div class="row">
+        <div class="column">
+            <p><img height=150 width=200 src="image/butter.jpg"</img></p>
+            <p>Butter Milk Chicken Dose</p><br>
+        </div>
+        <div class="column">
+            <p><img height=150 width=200 src="image/cappu.jpg"</img></p>
+            <p>Malt Choco Cappucino Cassino</p><br>
+        </div>
+        <div class="column">
+            <p><img height=150 width=200 src="image/chop.jpg"</img></p>
+            <p>Chicken Chop Margarilla</p><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <p><img height=150 width=200 src="image/steak.jpg"</img></p>
+            <p>Beef Steak Half Cook</p><br>
+        </div>
+        <div class="column">
+            <p><img height=150 width=200 src="image/tea.jpg"</img></p>
+            <p>Tea O beng Ben Ladin</p><br>
+        </div>
+        <div class="column">
+            <p><img height=150 width=200 src="image/choco.jpg"</img></p>
+            <p>Choco Dessert Cair</p><br>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><b>< ZxC Server ></b></p>
+    </div>
+    </body>
+</html>
